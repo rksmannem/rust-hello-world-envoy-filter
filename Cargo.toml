@@ -1,0 +1,13 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+log = "0.4.14"
+proxy-wasm = "0.1.4" # The Rust SDK for proxy-wasm
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
